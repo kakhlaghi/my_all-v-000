@@ -6,4 +6,10 @@ def my_all?(collection)
     block_return << yield(collection[count])
     count += 1 
   end
+  
+  if block_return_values.include?(false)
+    false
+  else
+    true
+  end
 end
